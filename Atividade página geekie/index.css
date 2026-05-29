@@ -1,0 +1,76 @@
+ /* Variáveis */
+    :root{
+      --cor-principal: #ff6600;
+      --cor-fundo: #e0a205;
+      --cor-texto: #ffffff;
+      --cor-branca: #000000;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background-color: var(--cor-fundo);
+
+      /* Flexbox */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100vh;
+    }
+
+    /* Caixa principal */
+    .card{
+      background-color: var(--cor-branca);
+      width: 900px;
+      padding: 50px;
+      border-radius: 22px;
+
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .texto{
+      width: 50%;
+    }
+
+    .titulo{
+      color: var(--cor-principal);
+      margin-bottom: 15px;
+    }
+
+    .descricao{
+      color: var(--cor-texto);
+      margin-bottom: 20px;
+    }
+
+    .botoes{
+      display: flex;
+      gap: 10px;
+    }
+
+    button{
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      background-color: var(--cor-principal);
+    }
+    
+    button:hover{
+      opacity: 0.8;
+    }
+
+    .imagem img{
+      width: 350px;
+      border-radius: 20px;
+    }
